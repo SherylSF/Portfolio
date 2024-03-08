@@ -3,9 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    
+    <nav id="desktop-nav">
+        <div class="logo">Sheryl Kuan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about"> About</a></li>
+                <li><a href="#experience"> Experience</a></li>
+                <li><a href="#projects"> Projects</a></li>
+                <li><a href="#contact"> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Sheryl Kuan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id='profile'>
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic-7.png" alt="Sheryl Kuan profile pic" class="profile-pic"/>
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Sheryl Kuan</h1>
+            <p class="section_text_p2">Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/sherylkuan327/'"/>
+                <img src="./assets/github.png" alt="My github profile" 
+                class="icon"
+                onclick="location.href='https://github.com/SherylSF/'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img 
+                src="./assets/profile-pic-4.png"
+                alt="Profile picture"
+                class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img
+                        src="./assets/experience.png"
+                        alt="Experience icon"
+                        class="icon"/>
+                        <h3>Experience</h3>
+                        <p>1.5 years <br />Full-stack Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png"
+                        alt="Education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>BEng Bachelors Degree <br/> MPhil Masters Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        A risk and compliance manager turned software engineer with about 1.5 years working on projects mostly using Javascript, React, Node, Express, HTML and CSS. Since graduation from the web development bootcamp, I have been working on projects on my own while diving deeper into data structure and algorithms. I also took up Typescript, Next JS, and currently signed up for a Golang course. 
+
+<br/> <br/>My past experience in risk and compliance involved working and communicating with various departments in implementing and executing policies, performing risk assessment, ensuring company was in compliance with the regulations and handling customer complaints. This role has certainly honed my attention to detail, communication skills, made me a better team player and enhance the understanding of customers’ needs.
+
+I look forward to collaborating on a team and leverage my technical and soft skills to develop applications and systems in a way that positively impacts organization with which I may have the opportunity to work in my next endeavour.  
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Typescript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>React</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div> 
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>React</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Sequealize</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>MongoDB</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id='projects'>
+        <p class="section_text_p1">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-survey.png" alt="Project 1" class="project-img-1"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Project One: Survey via Email</h2>
+                <p>Web Application</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/SherylSF/survey'">Github</button>
+                    <button class="btn btn-color-2 project-btn"  onclick="location.href='https://youtu.be/E58alu0eaPk'">Demo Video</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-rideshare-3.png" alt="Project 2" class="project-img-2"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two: Rideshare</h2>
+                <p>Mobile and Web Application</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/2206-fsa-ghp-taurus/rideshare'">Github</button>
+                    <button class="btn btn-color-2 project-btn"  onclick="location.href='https://www.youtube.com/watch?v=LBItiybtLn8'">Demo Video</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2-travel-app.png" alt="Project 3" class="project-img-3"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Project Three: Travel Guide</h2>
+                <p>Mobile Application</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/SherylSF/travelguide'">Github</button>
+                    <button class="btn btn-color-2 project-btn"  onclick="location.href='https://youtu.be/WUV7nCR-ap4'">Demo Video</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-ecommerce.png" alt="Project 4" class="project-img-4"/>   
+                </div>
+                <h2 class="experience-sub-title project-title">Project Four: E-commerce</h2>
+                <p>Web Application</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/2206-fsa-ghp-taurus/grace-shopper'">Github</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-todo-app.png" alt="Project 6" class="project-img-6"/>   
+                </div>
+                <h2 class="experience-sub-title project-title">Project Five: Todo App</h2>
+                <p>Web Application</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/SherylSF/react-ts-fcc-tutorial'">Github</button>
+                    <button class="btn btn-color-2 project-btn"  onclick="location.href='https://youtu.be/Nlz3smQXsuQ'">Demo Video</button>
+                </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
+                <p><a href="mailto:sherylkuan327@gmail.com">sherylkuan327@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/sherylkuan327/">Linkedin</a></p>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <nav class="footer-nav">
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Sheryl Kuan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
