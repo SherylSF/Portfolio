@@ -12,6 +12,7 @@
     #projects {
       height: fit-content;
     }
+
   }
   
   @media screen and (max-width: 1200px) {
@@ -43,6 +44,7 @@
     #experience,
     .experience-details-container {
       margin-top: 2rem;
+     
     }
     #profile,
     .section-container {
@@ -76,9 +78,13 @@
     }
 
     #experience {
-        height: 235vh;
+        height: 225vh;
+        margin-bottom: 0;
     }
+
+  
   }
+
   
   @media screen and (max-width: 600px) {
     #contact,
